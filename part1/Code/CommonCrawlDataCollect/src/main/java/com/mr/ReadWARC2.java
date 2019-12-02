@@ -49,8 +49,8 @@ public class ReadWARC2 {
 		BufferedWriter bw = new BufferedWriter(fw);
 		FileReader fr =new FileReader("/home/shikhar/Desktop/WET/CC-MAIN-20190215183319-20190215205319-00000.warc.wet");
 		AWSCredentials credentials = new BasicAWSCredentials(
-				"AKIAI3GTSNNLYE2E5G7Q", 
-				"RE/sx29DkvZhbQhmiTOGI6kThv8W44iObR3IJO8j"
+				"", 
+				""
 				);
 		AmazonS3 s3 = (AmazonS3) AmazonS3ClientBuilder.standard().withCredentials(new AWSStaticCredentialsProvider(credentials)).
 				withRegion(Regions.US_EAST_1).build();
